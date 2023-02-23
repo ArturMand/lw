@@ -18,6 +18,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and(min-width: 1280px) {
+      position: relative;
+    }
   }
   &__logo {
     position: relative;
