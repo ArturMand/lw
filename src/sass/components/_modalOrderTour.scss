@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 774px;
 
   &__title {
     @extend %font-modalTitle;
@@ -11,6 +12,7 @@
     margin-top: 20px;
     color: $main-color-text;
     width: 100%;
+
     text-align: center;
   }
   &__form {
@@ -22,7 +24,7 @@
 
     @media screen and(min-width:768px) and(max-width:1279px) {
       gap: 22px;
-      margin-top: 20px; 
+      margin-top: 20px;
     }
     @media screen and(min-width:1280px) {
       gap: 30px;
@@ -31,11 +33,12 @@
   }
   &__input {
     @extend %font-maintext;
-    color: #003D1F;
+    color: #003d1f;
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #395C4B;
+    border-bottom: 1px solid #395c4b;
+    outline: none;
   }
   &__btn {
     margin-top: 22px;
