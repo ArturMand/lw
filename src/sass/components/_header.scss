@@ -2,7 +2,11 @@
 @import './_contacts';
 
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
   z-index: 9;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     min-width: 768px;
@@ -11,17 +15,13 @@
     min-width: 1280px;
   }
   &__wrapper {
-    position: relative;
-
-    @media screen and (min-width: 1280px) {
-      display: flex;
-      justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__logo {
     position: relative;
     z-index: 10;
-    display: inline-block;
     padding: 28px 0;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -49,12 +49,12 @@
     color: white;
     @media screen and (max-width: 767px) {
       margin-top: 133px;
-      margin-left: 30px;
+      // margin-left: 30px;
     }
 
     @media screen and(min-width:768px) and(max-width:1279px) {
       margin-top: 180px;
-      margin-left: 82px;
+      // margin-left: 82px;
     }
   }
   &__list {

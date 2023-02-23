@@ -1,21 +1,26 @@
 .menu {
   @extend %font-header;
   color: white;
+
   @media screen and(max-width:$max1280) {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1px;
     width: 50%;
-    max-height: 807px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $backdrop-color;
 
     opacity: 0;
     pointer-events: none;
     transition: $cubic;
   }
-  @media screen and (max-width: 767px) {
-    max-height: 786px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   left: -31px;
+  //   width: calc(50% + 60px);
+  // }
+
 }
 .menu.is-open {
   opacity: 1;
@@ -24,16 +29,10 @@
 }
 
 .btn__menu {
-  position: absolute;
+  position: relative;
   z-index: 10;
-  top: 40px;
-  right: 45px;
-  transform: translate(50%, -50%);
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 40px;
-    right: 46px;
-    transform: translate(-50%, -50%);
-  }
+
+
   @media screen and (min-width: 1280px) {
     display: none;
   }

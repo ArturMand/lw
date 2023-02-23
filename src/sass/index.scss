@@ -1,8 +1,8 @@
-@import './utils/_variables';
-@import './utils/_common';
-
+@import './utils/variables';
+@import './utils/common';
+@import './components/backdrop';
 @import './components/header';
-@import './components/_hero';
+@import './components/hero';
 @import './components/about';
 @import './components/advantages';
 @import './components/tours';

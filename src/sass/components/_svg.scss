@@ -1,0 +1,15 @@
+.svg {
+  fill: currentColor;
+  display: block;
+  &__cross {
+    color: $main-color;
+    @media screen and(max-width:767px) {
+      width: 15px;
+      height: 15px;
+    }
+    @media screen and(min-width:768px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

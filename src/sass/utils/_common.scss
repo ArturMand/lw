@@ -1,3 +1,4 @@
+@import '../components/svg';
 * {
   box-sizing: border-box;
 }
@@ -37,12 +38,13 @@ p {
 }
 
 .container {
-  max-width: $min375;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
-
+  @media screen and(min-width:$min375) {
+    max-width: $min375;
+  }
   @media screen and (min-width: $min768) {
     min-width: $min768;
     padding-left: 20px;
@@ -69,10 +71,7 @@ p {
   color: inherit;
   text-decoration: none;
 }
-.svg {
-  fill: currentColor;
-  display: block;
-}
+
 .btn {
   background-color: transparent;
   border: none;
