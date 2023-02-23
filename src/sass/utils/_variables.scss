@@ -61,7 +61,7 @@ $cubic: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
 %font-maintext {
   font-family: 'Manrope';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
   @media screen and(min-width:768px) and(max-widht:$max1280) {
@@ -77,4 +77,18 @@ $cubic: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 600;
   font-size: 28px;
   line-height: 1.35;
+}
+%font-modalTitle {
+  color: $main-color;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+  @media screen and(min-width:768px) and(max-width:$max1280) {
+    font-size: 32px;
+  }
+  @media screen and(min-width:$min1280) {
+    font-size: 60px;
+  }
 }

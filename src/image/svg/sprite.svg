@@ -22,7 +22,7 @@
 <path  d="M16 0.377c-8.627 0-15.686 7.043-15.686 15.718 0 7.843 5.741 14.353 13.239 15.529v-10.98h-3.984v-4.549h3.984v-3.467c0-3.937 2.337-6.102 5.929-6.102 1.71 0 3.498 0.298 3.498 0.298v3.875h-1.976c-1.945 0-2.557 1.208-2.557 2.447v2.949h4.361l-0.706 4.549h-3.655v10.98c3.696-0.584 7.062-2.47 9.49-5.318s3.758-6.47 3.749-10.212c0-8.675-7.059-15.718-15.686-15.718z"></path>
 </symbol>
 <symbol id="cross" viewBox="0 0 32 32">
-<path fill="none" stroke="#f1f6f6" style="stroke: var(--color1, #f1f6f6)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M30.545 30.545l-29.091-29.091M30.545 1.455l-29.091 29.091"></path>
+<path d="M21 21L1 1M21 1L1 21" stroke="#395C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
 <symbol id="instagram" viewBox="0 0 32 32">
@@ -46,3 +46,6 @@
 
 </defs>
 </svg>
+
+
+

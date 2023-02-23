@@ -66,34 +66,5 @@
       max-width: 612px;
     }
   }
-  &__btn {
-    @extend %font-subtitle;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 285px;
-    height: 56px;
-    background-color: $main-color;
-    color: $white-color;
-    text-transform: uppercase;
-    transition: $cubic;
-    @media screen and(max-width:375px) {
-      width: 225px;
-    }
-    @media screen and(min-width:768px) and(max-width:$max1280) {
-      width: 394px;
-      height: 56px;
-    }
-    @media screen and(min-width:$min1280) {
-      width: 575px;
-      height: 69px;
-    }
-    &:hover,
-    &:focus {
-      background-color: $hover-color;
-    }
-    &:active {
-      background-color: $active-color;
-    }
-  }
+
 }

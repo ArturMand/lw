@@ -2,7 +2,7 @@
   fill: currentColor;
   display: block;
   &__cross {
-    color: $main-color;
+
     @media screen and(max-width:767px) {
       width: 15px;
       height: 15px;

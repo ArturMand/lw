@@ -1,4 +1,5 @@
 @import '../components/svg';
+@import '../components/btn';
 * {
   box-sizing: border-box;
 }
@@ -72,11 +73,3 @@ p {
   text-decoration: none;
 }
 
-.btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}

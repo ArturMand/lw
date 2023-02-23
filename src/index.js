@@ -1,3 +1,4 @@
 import './JS/header';
 import './JS/openModalOrderTour';
-import './JS/closeBackdrop'
+import './JS/closeModalOrderTour';
+import './JS/formOrderTour';
