@@ -30,10 +30,6 @@
     pointer-events: none;
     transition: $cubic;
   }
-  // @media screen and (max-width: 767px) {
-  //   left: -31px;
-  //   width: calc(50% + 60px);
-  // }
 }
 .menu.is-open {
   opacity: 1;
