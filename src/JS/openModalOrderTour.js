@@ -1,4 +1,4 @@
-const btnOpenModalRef = document.querySelector('.btn__hero');
+const btnOpenModalRef = document.querySelector('.btn__main');
 const backdropRef = document.querySelector('.backdrop');
 const modalOrderTourRef = document.querySelector('.modalOrderTour');
 const closeModalAndMobileMenuByEsc = e => {
