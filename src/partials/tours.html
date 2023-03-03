@@ -1,6 +1,113 @@
 <section class="section tours" id="tours">
-  <div class="container" >
+  <div class="container">
     <h2 class="tours__title">Найближчі тури</h2>
-    <input type="radio" value="text">
+
+    <ul class="list chooseList">
+      <li class="chooseList__item">
+        <button class="btn btn__chooseList is-active" data-tour="goverla">
+          Сходження на Говерлу
+        </button>
+      </li>
+      <li class="chooseList__item">
+        <button class="btn btn__chooseList" data-tour="bukovel">
+          Лижний тур на Буковель
+        </button>
+      </li>
+      <li class="chooseList__item">
+        <button class="btn btn__chooseList" data-tour="carp">
+          Тиждень в Карпатах
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tours__wrapper">
+    <div class="swiper goverla is-visible">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <video
+            class="tours__item"
+            autoplay
+            loop
+            muted
+            data-goverlaDay="1"
+            src="https://res.cloudinary.com/dmb2n4te8/video/upload/v1677595795/KM/video/1.1_sbtndj.mp4"
+          ></video>
+          <div class="tours__meta is-active">
+            <h3 class="tours__subtitle">1 день</h3>
+            <ul class="tours__list list">
+              <li class="tours__text">Виїзд зі Львова</li>
+              <li class="tours__text">Манявський скит</li>
+              <li class="tours__text">Манявський водоспад</li>
+              <li class="tours__text">Приїзд до Буковеля</li>
+              <li class="tours__text">Поселення в готель</li>
+              <li class="tours__text">Вечеря</li>
+              <li class="tours__text">Вечір біля каміна</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <video
+            class="tours__item"
+            autoplay
+            loop
+            muted
+            data-goverlaDay="1"
+            src="https://res.cloudinary.com/dmb2n4te8/video/upload/v1677595792/KM/video/1.2_ajdu6k.mp4"
+          ></video>
+          <div class="tours__meta">
+            <h3 class="tours__subtitle">2 день</h3>
+            <ul class="tours__list list">
+              <li class="tours__text">Сніданок</li>
+              <li class="tours__text">Підйом на Говерлу</li>
+              <li class="tours__text">Обід</li>
+              <li class="tours__text">Активний відпочинок</li>
+              <li class="tours__text">Сауна</li>
+              <li class="tours__text">Вечеря</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <video
+            class="tours__item"
+            autoplay
+            loop
+            muted
+            data-goverlaDay="1"
+            src="https://res.cloudinary.com/dmb2n4te8/video/upload/v1677595791/KM/video/1.3_mvmqza.mp4"
+          ></video>
+          <div class="tours__meta">
+            <h3 class="tours__subtitle">3 день</h3>
+            <ul class="tours__list list">
+              <li class="tours__text">Сніданок</li>
+              <li class="tours__text">Прогулянка по Буковелі</li>
+              <li class="tours__text">Виселення з готелю</li>
+              <li class="tours__text">Яремче</li>
+              <li class="tours__text">Прибуття до Львову</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="bukovel slider" data-bukovel>
+      <div class="slider__line">
+        <video
+          class="tours__item"
+          autoplay
+          loop
+          muted
+          src="https://res.cloudinary.com/dmb2n4te8/video/upload/v1677772151/KM/video/2.1_vrud0j.mp4"
+        ></video>
+      </div>
+    </div>
+
+    <div class="carp slider" data-carp>
+      <div class="slider_line"></div>
+    </div>
   </div>
 </section>

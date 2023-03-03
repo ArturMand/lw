@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/common';
+@import '../../node_modules/swiper/swiper-bundle.min.css';
 @import './components/backdrop';
 @import './components/modal';
 @import './components/header';
@@ -10,5 +11,4 @@
 @import './components/review';
 @import './components/question';
 @import './components/footer';
-@import './components/modalOrderTour'
-
+@import './components/modalOrderTour';
