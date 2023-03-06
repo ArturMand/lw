@@ -68,10 +68,6 @@ function navigationCard() {
   const item = document.querySelectorAll('.swiper-slide');
   const card = document.querySelectorAll('.reviews__card');
 
-  btn.forEach(el => {
-    el.addEventListener('click', () => item.forEach((el, i) => i && el));
-  });
-
   for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', function () {
       card[i].classList.toggle('current');
