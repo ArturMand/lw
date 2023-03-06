@@ -4,7 +4,6 @@ const list = document.querySelector('#swip');
 
 reviews().then(markupCard);
 
-
 function markupCard(data) {
   const markup = data.map(
     el => `
@@ -59,7 +58,7 @@ function markupCard(data) {
 }
 
 //SWIPER
-new Swiper('.mySwiper', {
+new Swiper('.swiper2', {
   modules: [Navigation],
   //speed: 2000,
   spaceBetween: 20,
@@ -69,19 +68,14 @@ new Swiper('.mySwiper', {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
     },
     1280: {
       slidesPerView: 3,
-      slidesPerGroup: 3,
     },
   },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
- // autoplay: false,
+  // autoplay: false,
 });
-
-
-
