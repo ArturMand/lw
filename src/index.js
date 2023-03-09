@@ -7,3 +7,4 @@ import './JS/sliderTours';
 import './JS/advantages';
 //import './JS/reviewsData';
 import './JS/reviews';
+import './JS/question';
