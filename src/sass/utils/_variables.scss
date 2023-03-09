@@ -64,7 +64,7 @@ $cubic: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
-  @media screen and(min-width:768px) and(max-widht:$max1280) {
+  @media screen and(min-width:768px) {
     font-size: 20px;
   }
   @media screen and(min-width:$min1280) {
@@ -96,7 +96,6 @@ $cubic: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
 %hover-input:focus {
   color: $main-color;
   border-bottom: 1px solid $main-color;
-  box-shadow: 0px 4px 32px 4px rgba(32, 35, 33, 0.2);
 }
 
 %active-input:active {

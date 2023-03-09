@@ -1,6 +1,6 @@
 import Swiper, { Pagination, Autoplay } from 'swiper';
 const metaAnimationRef = document.querySelectorAll('.tours__meta');
-new Swiper('.swiper', {
+new Swiper('.swiper1', {
   modules: [Autoplay, Pagination],
   slidesPerView: 1,
   spaceBetween: 50,
