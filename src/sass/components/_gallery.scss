@@ -107,15 +107,15 @@
     }
 }
 
-.gallery__link {
-    display: block;
-    text-decoration: none;
-    height: 100%;
-}
+// .gallery__link {
+//     display: block;
+//     text-decoration: none;
+//     height: 100%;
+// }
 
-.gallery__link:hover {
-    cursor: zoom-in;
-}
+// .gallery__link:hover {
+//     cursor: zoom-in;
+// }
 
 .gallery__photo {
     @media screen and (max-width:768px) {
@@ -244,4 +244,8 @@
         left: 840px; 
         top: 274;
     } 
+}
+.sl-overlay {
+
+    background-color: rgba(32, 35, 33, 0.5) !important
 }
