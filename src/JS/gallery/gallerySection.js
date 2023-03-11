@@ -1,19 +1,12 @@
 import { galleryMarkup } from './galleryMarkup';
+import { fetchData } from './galleryFetch';
 
 (() => {
     const buttons = document.querySelectorAll('#galleryBtn');
     const item = document.querySelector('#swiper3');
-    const URL_DB = `https://carpathians-db.onrender.com/api/gallery`
-    const KEY = 'dede23wfWSD@@$fsD3'
 
-    async function fetchData(season) {
-        const response = await fetch(`${URL_DB}/${season}`, {
-            method: 'GET',
-            headers: { key: KEY}
-        });
-        const data = await response.json();
-        return data;
-    }
+
+
 
     async function init() {
         try {
