@@ -3,13 +3,8 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 export function galleryMarkup(data) {
     const item = document.querySelector('#swiper3');
-    
-                setTimeout(() => {
-                    item.innerHTML = '';
-                }, 500);
-                
-                
-                const newElement = `
+        item.innerHTML = '';
+        const newElement = `
                 <div class="swiper-slide slide1">
                     <a href='${data[0].fullImg_1_desk_1x}' class='gallery_link2'>    
                         <picture>
@@ -206,13 +201,11 @@ export function galleryMarkup(data) {
                         </picture>
                     </a>
                     </div>
-                    `;
-                setTimeout(() => {
-                    item.insertAdjacentHTML('beforeend', [...newElement].join(''))
-                    const gallery2 = new SimpleLightbox('.gallery_link2', {
-                        captionsData: 'alt',
-                        captionDelay: 250,
-                    })
-                gallery2.refresh()
-                }, 600);
+            `;
+        item.insertAdjacentHTML('beforeend', [...newElement].join(''))
+        const gallery2 = new SimpleLightbox('.gallery_link2', {
+            captionsData: 'alt',
+            captionDelay: 250,
+        })
+        gallery2.refresh()
 }

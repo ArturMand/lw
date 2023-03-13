@@ -1,19 +1,15 @@
 import { galleryMarkup } from './galleryMarkup';
-import { fetchData } from './galleryFetch';
+import { fetchGallery } from './galleryFetch';
 
-(() => {
+(async () => {
     const buttons = document.querySelectorAll('#galleryBtn');
     const item = document.querySelector('#swiper3');
 
-
-
-
-    async function init() {
         try {
-            const data = await fetchData('summer');
+            const data = await fetchGallery('summer');
             galleryMarkup(data);
         } catch (error) {
-            console.error(error);
+            throw new Error(error);
         }
 
         buttons.forEach(button => {
@@ -37,14 +33,11 @@ import { fetchData } from './galleryFetch';
                 button.classList.add('gallery__button--active');
 
                 try {
-                    const data = await fetchData(season);
+                    const data = await fetchGallery(season);
                     galleryMarkup(data);
                 } catch (error) {
-                    console.error(error);
+                    throw new Error(error);;
                 }
             });
         });
-    }
-
-    init();
 })();
