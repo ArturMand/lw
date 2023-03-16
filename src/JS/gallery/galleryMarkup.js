@@ -5,7 +5,7 @@ export function galleryMarkup(data) {
     const item = document.querySelector('#swiper3');
         item.innerHTML = '';
         const newElement = `
-                <div class="swiper-slide slide1">
+                <div class="swiper-slide gallery__slide slide1">
                     <a href='${data[0].fullImg_1_desk_1x}' class='gallery_link2'>    
                         <picture>
                             <source
@@ -43,7 +43,7 @@ export function galleryMarkup(data) {
 
                     </a>
                 </div>
-                <div class="swiper-slide slide2">
+                <div class="swiper-slide gallery__slide slide2">
                     <a href='${data[0].fullImg_2_desk_1x}' class='gallery_link2'>    
             
                         <picture>
@@ -84,7 +84,7 @@ export function galleryMarkup(data) {
                         </picture>
                     </a>
                 </div>
-                <div class="swiper-slide slide3">
+                <div class="swiper-slide gallery__slide slide3">
                     <a href='${data[0].fullImg_3_desk_1x}' class='gallery_link2'>    
             
                         <picture>
@@ -123,7 +123,7 @@ export function galleryMarkup(data) {
                         </picture>
                     </a>
                 </div>
-                <div class="swiper-slide slide4">
+                <div class="swiper-slide gallery__slide slide4">
                     <a href='${data[0].fullImg_4_desk_1x}' class='gallery_link2'>    
         
                         <picture>
@@ -162,7 +162,7 @@ export function galleryMarkup(data) {
                         </picture>
                     </a>
                 </div>
-                <div class="swiper-slide slide5">
+                <div class="swiper-slide gallery__slide slide5">
                     <a href='${data[0].fullImg_5_desk_1x}' class='gallery_link2'>    
             
                         <picture>

@@ -4,5 +4,9 @@ import './JS/closeModalOrderTour';
 import './JS/formOrderTour';
 import './JS/toggleTours';
 import './JS/sliderTours';
+import './JS/advantages/advantages';
+import './JS/reviews/reviewsSection';
+import './JS/reviews/reviewsSwiper';
 import './JS/gallery/gallerySection';
-import './JS/gallery/gallerySwiper'
+import './JS/gallery/gallerySwiper';
+import './JS/question/question';
