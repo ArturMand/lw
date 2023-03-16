@@ -116,10 +116,10 @@
         pointer-events: all;
     }
 }
-.swiper-slide{
+.gallery__slide{
         transition: transform 1s ease;
 }
-.swiper-slide:hover {
+.gallery__slide:hover {
     @media screen and (min-width:1280px) {
         transform: scale(1.25);
         transition: transform 1s ease;
@@ -127,22 +127,22 @@
     }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.gallery__prev,
+.gallery__next {
     color: #395C4B;
     top: 578px;
 }
-.swiper-button-prev{
+.gallery__prev{
     left: 120px;
 }
-.swiper-button-next{
+.gallery__next{
     left: 175px;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
         font-size: 20px;
 }
-.swiper-slide{
+.gallery__slide{
         @media screen and (min-width:768px) {
     position: absolute;
     top: 0;

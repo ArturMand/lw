@@ -1,9 +1,4 @@
 .reviews {
-  padding: 60px 0;
-
-  @media screen and(min-width: $min768) {
-    padding: 80px 0;
-  }
   &__title {
     @extend %font-title;
     text-align: center;
@@ -75,7 +70,7 @@
   }
 }
 
-.swiper-slide {
+.reviews__slide {
   width: 315px;
   height: 452px;
   position: relative;
@@ -94,17 +89,6 @@
 
   &.is-transform {
     border: 0;
-  }
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  width: 28px;
-  height: 28px;
-
-  @media screen and(min-width: $min768) {
-    width: 40px;
-    height: 40px;
   }
 }
 
@@ -141,31 +125,40 @@
   }
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: '';
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
 }
-.swiper-button-prev {
+.reviews__prev,
+.reviews__next {
+  width: 28px;
+  height: 28px;
+  color: #395c4b;
   top: 98%;
+  @media screen and(min-width: $min768) {
+    width: 40px;
+    height: 40px;
+    top: 96%;
+  }
+  @media screen and(min-width: $min1280) {
+    top: 97%;
+  }
+}
+.reviews__prev {
   left: 35%;
   @media screen and(min-width: $min768) {
-    top: 96%;
     left: 40%;
   }
   @media screen and(min-width: $min1280) {
-    top: 97%;
     left: 44%;
   }
 }
-.swiper-button-next {
-  top: 98%;
+.reviews__next {
   left: 55%;
   @media screen and(min-width: $min768) {
-    top: 96%;
     left: 54%;
   }
   @media screen and(min-width: $min1280) {
-    top: 97%;
     left: 52%;
   }
 }
@@ -187,11 +180,5 @@
   }
   @media screen and(min-width: $min1280) {
     height: 670px;
-  }
-}
-.reviews__icon {
-  @media screen and(min-width: $min768) {
-    width: 15px;
-    height: 27px;
   }
 }

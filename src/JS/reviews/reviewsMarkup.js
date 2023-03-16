@@ -1,14 +1,11 @@
-import Swiper, { Navigation } from 'swiper';
-import { reviews } from './reviewsData';
+import { navigationReviews } from './reviewsNavigation';
 
-const list = document.querySelector('#swip');
+export const markupReviews = data => {
+  const list = document.querySelector('#swiper2');
 
-reviews().then(markupCard);
-
-function markupCard(data) {
   const markup = data.map(
     el => `
-<div class="swiper-slide" id="slid">
+<div class="swiper-slide reviews__slide" id="slider">
 <picture> 
 <source srcset="
               ${el.bcgPhoto_desk_1x} 1x,
@@ -60,38 +57,8 @@ function markupCard(data) {
 </div>
 `
   );
+
   list.insertAdjacentHTML('beforeend', markup.join(''));
-  navigationCard();
-}
-function navigationCard() {
-  const btn = document.querySelectorAll('.reviews__btn');
-  const item = document.querySelectorAll('.swiper-slide');
-  const card = document.querySelectorAll('.reviews__card');
 
-  for (let i = 0; i < btn.length; i++) {
-    btn[i].addEventListener('click', function () {
-      card[i].classList.toggle('current');
-      item[i].classList.toggle('is-transform');
-    });
-  }
-}
-//SWIPER
-new Swiper('.swiper2', {
-  modules: [Navigation],
-  spaceBetween: 20,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    1280: {
-      slidesPerView: 3,
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+  navigationReviews();
+};
